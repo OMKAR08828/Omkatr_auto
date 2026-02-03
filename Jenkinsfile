@@ -25,11 +25,7 @@ pipeline {
                 // Runs your tests
                 bat 'mvn test'
             }
-            post {
-                always {
-                    // Archives test results even if tests fail
-                    junit '**/target/surefire-reports/*.xml'
-                }
+            
             }
         }
     }
