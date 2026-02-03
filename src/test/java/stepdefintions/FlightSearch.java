@@ -14,7 +14,7 @@ public class FlightSearch {
 		driver= new ChromeDriver();
 		driver.get("https://mvnrepository.com/artifact/commons-io/commons-io/2.20.0");
 	   Assert.assertEquals(true, true);
-		Assert.assertEquals(true, true);
+
 	}
 
 	@When("^user selects city1 and city2$")
