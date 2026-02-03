@@ -25,8 +25,6 @@ pipeline {
                 // Runs your tests
                 bat 'mvn test'
             }
-            
-            
         }
     }
 }
