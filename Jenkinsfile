@@ -17,13 +17,13 @@ pipeline {
         stage('Build') {
             steps {
                 // Runs build without tests first to ensure compilation works
-                sh 'mvn clean install -DskipTests'
+                bat 'mvn clean install -DskipTests'
             }
         }
         stage('Test') {
             steps {
                 // Runs your tests
-                sh 'mvn test'
+                bat 'mvn test'
             }
             post {
                 always {
